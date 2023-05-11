@@ -5,8 +5,8 @@ import behmorMachine from '../public/images/behmor-machine.png'
 
 const Hero = () => {
   return (
-    <section className='h-screen flex items-center bg-dullcream'>
-      <div className='flex flex-col gap-6 lg:flex-row lg:gap-12 lg:items-center mx-6 lg:w-[800px] xl:w-[980px] lg:mx-auto'>
+    <section className='h-screen flex items-center bg-dullcream -mt-[36px]'>
+      <div className='flex flex-col gap-6 lg:flex-row lg:gap-12 lg:items-center mx-6 lg:w-[800px] xl:w-[980px] lg:mx-auto '>
         <div className='lg:w-1/2'>
           <h1 className=' font-playfair text-5xl text-headerBrown lg:text-7xl italic'>
           <TypeAnimation
