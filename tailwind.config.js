@@ -11,7 +11,8 @@ module.exports = {
         dullgold:'#C06014',
         dullgray:'#536162',
         dullcream:'#ece0d1',
-        headerBrown:'#634832'
+        headerBrown:'#634832',
+        whatsapp:"#25D366"
       },
       fontFamily:{
         playfair:['var(--font-playfair)'],
