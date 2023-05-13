@@ -2,6 +2,7 @@ import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import Image from 'next/image'
 import behmorMachine from '../public/images/behmor-machine.png'
+import {AiOutlineFilePdf} from 'react-icons/ai'
 
 const Hero = () => {
   return (
@@ -32,9 +33,15 @@ const Hero = () => {
           <p className='my-5 lg:text-lg'>
             Introducing <span className='text-dullgold font-semibold'>Behmor 2020SR Plus</span>, award-winning coffee roaster enables craft coffee roasting to be experienced at home with precision controls and smoke suppression.
           </p>
-          <button className='p-3 bg-dullgold text-white rounded-lg font-semibold capitalize'>
-            <a href="">Get it now</a>
-          </button>
+          <div className='flex justify-between'>
+            <button className='p-3 bg-dullgold border text-white rounded-lg font-semibold capitalize hover:bg-transparent hover:border hover:border-dullgold hover:text-dullgold ease duration-200'>
+              <a href="">Get it now</a>
+            </button>
+            <button className='flex flex-row items-center border border-dullgold rounded-lg text-dullgold p-2 hover:bg-dullgold hover:text-white'>
+                <AiOutlineFilePdf size="2em"/>
+                <a href="./220v_Operation_Manual_2020SR_V21_8.8.2020.pdf" target='_blank'>Product Manual</a>
+            </button>
+          </div>
         </div>
         <div className='lg:w-1/2'>
           <Image src={behmorMachine} alt='Behmor 2020SR Plus'/>
