@@ -44,7 +44,7 @@ const Features = () => {
       <div className=' flex flex-col lg:flex-row lg:gap-16 gap-6 '>
         <div>
           <h3 className='text-2xl font-bold mb-2'>Specifications</h3>
-          <ul className='list-disc ml-5'>
+          <ul className='list-disc ml-5 marker:text-dullgold'>
             <li>Up to 450g coffee beans per roast</li>
             <li>Roasting time between 13 and 18 minutes</li>
             <li>Easy automatic roasting: 5 pre-programmed roasting profiles</li>
@@ -92,7 +92,7 @@ const Features = () => {
           </div>
           <div className='mt-5'>
             <h3 className='text-2xl font-bold mb-2'>Includes</h3>
-            <ul className='list-disc ml-5'>
+            <ul className='list-disc ml-5 marker:text-dullgold'>
               <li>Roaster incl. control</li>
               <li>Roast drum</li>
               <li>Chaff collector</li>
