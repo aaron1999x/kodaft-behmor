@@ -25,7 +25,7 @@ const Features = () => {
       <div className='mb-5 flex flex-col gap-6 lg:gap-12 lg:flex-row'>
         <div className='lg:w-3/5'>
           <p>
-            Behmor AB Plus 2020SR is easy to use for those with no knowledge of roasting – simply, press few buttons and start, just like operating a microwave oven. For knowledgeable roasters who wants to alter the profile of roasting, they have the flexibility to adjust the drum speed, roasting time and roasting temperature. Checking the exhaust and chamber temperature is as easy as pressing a button to display temperature. The Rosetta Stone function provides the roaster some control and action before the roasting beans reach second crack.
+            Behmor Plus 2020SR is easy to use for those with no knowledge of roasting – simply, press few buttons and start, just like operating a microwave oven. For knowledgeable roasters who wants to alter the profile of roasting, they have the flexibility to adjust the drum speed, roasting time and roasting temperature. Checking the exhaust and chamber temperature is as easy as pressing a button to display temperature. The Rosetta Stone function provides the roaster some control and action before the roasting beans reach second crack.
           </p>
         </div>
         <motion.div className='lg:w-2/5 flex flex-col gap-1 lg:pl-3'

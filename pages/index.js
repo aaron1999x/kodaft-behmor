@@ -3,6 +3,7 @@ import Hero from '@/components/Hero'
 import Header from '@/components/Header'
 import Features from '@/components/Features'
 import WhatsappCTA from '@/components/WhatsappCTA'
+import MetaHead from '@/components/MetaHead'
 
 const raleway = Raleway({ subsets: ['latin'] })
 const playfair =Playfair_Display({ subsets: ['latin'],variable:'--font-playfair' })
@@ -12,6 +13,7 @@ export default function Home() {
     <main
       className={`${raleway.className} ${playfair.variable} relative`}
     >
+      <MetaHead />
       <Header/>
       <Hero />
       <Features />
