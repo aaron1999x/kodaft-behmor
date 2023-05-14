@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Raleway,Playfair_Display } from 'next/font/google'
 import Hero from '@/components/Hero'
 import Header from '@/components/Header'

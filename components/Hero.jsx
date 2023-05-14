@@ -4,6 +4,7 @@ import Image from 'next/image'
 import behmorMachine from '../public/images/behmor-machine.png'
 import {AiOutlineFilePdf} from 'react-icons/ai'
 import {FaRegHandPointer} from 'react-icons/fa'
+import {motion} from 'framer-motion'
 
 const Hero = () => {
 
@@ -43,20 +44,36 @@ const Hero = () => {
           <h1 className=' font-playfair text-5xl text-headerBrown lg:text-7xl'>
             like a pro at home.
           </h1>
-          <p className='my-5 lg:text-lg'>
+          <motion.p className='my-5 lg:text-lg'
+            initial={{opacity:0,x:-50}}
+            animate={{opacity:1,x:0}}
+            transition={{duration:1,delay:0.2}}
+          >
             Introducing <span className='text-dullgold font-semibold'>Behmor 2020SR Plus</span>, award-winning coffee roaster enables craft coffee roasting to be experienced at home with precision controls and smoke suppression.
-          </p>
+          </motion.p>
           <div className='flex justify-between'>
-            <button className='p-3 bg-dullgold border text-white rounded-lg font-semibold capitalize hover:bg-transparent hover:border hover:border-dullgold hover:text-dullgold ease duration-200'>
+            <motion.button className='p-3 bg-dullgold border text-white rounded-lg font-semibold capitalize hover:bg-transparent hover:border hover:border-dullgold hover:text-dullgold ease duration-200'
+              initial={{y:20, opacity:0}}
+              animate={{y:0, opacity:1}}
+              transition={{duration:1, delay:0.3}}
+            >
               <a href="">Get it now</a>
-            </button>
-            <button className='flex flex-row items-center border border-dullgold rounded-lg text-dullgold p-2 hover:bg-dullgold hover:text-white'>
+            </motion.button>
+            <motion.button className='flex flex-row items-center border border-dullgold rounded-lg text-dullgold p-2 hover:bg-dullgold hover:text-white'
+              initial={{y:20, opacity:0}}
+              animate={{y:0, opacity:1}}
+              transition={{duration:1, delay:0.3}}
+            >
                 <AiOutlineFilePdf size="2em"/>
                 <a href="./220v_Operation_Manual_2020SR_V21_8.8.2020.pdf" target='_blank'>Product Manual</a>
-            </button>
+            </motion.button>
           </div>
         </div>
-        <div className='lg:w-1/2 relative'>
+        <motion.div className='lg:w-1/2 relative'
+          initial={{opacity:0,scale:0.8}}
+          animate={{opacity:1, scale:1}}
+          transition={{duration:1,delay:1}}
+        >
           <div className='flex justify-end'>
           <div class="absolute top-[-28px] right-[-4px] hover:scale-110 ease-in duration-150 lg:flex hidden ">
             <button href="#features" onClick={smoothScroll} class="w-16 h-16 bg-dullgray rounded-full text-white font-bold relative">Learn More
@@ -65,7 +82,7 @@ const Hero = () => {
           </div>
           </div>
           <Image src={behmorMachine} alt='Behmor 2020SR Plus'/>
-        </div>
+        </motion.div>
       </div>
 
     </section>

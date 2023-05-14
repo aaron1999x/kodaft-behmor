@@ -4,7 +4,20 @@ import {MdNoiseAware,MdOutlineMicrowave} from "react-icons/md"
 import {GiSmokeBomb} from 'react-icons/gi'
 import {AiOutlineProfile} from 'react-icons/ai'
 import FeatureItem from './FeatureItem'
+import { motion } from "framer-motion"
 
+const list = {
+  initial:{
+    opacity:1,
+  },
+  animate:{
+    opacity:1,
+    transition:{
+      delay:0.2,
+      staggerChildren:0.5
+    }
+  }
+}
 
 const Features = () => {
   return (
@@ -15,13 +28,18 @@ const Features = () => {
             Behmor AB Plus 2020SR is easy to use for those with no knowledge of roasting – simply, press few buttons and start, just like operating a microwave oven. For knowledgeable roasters who wants to alter the profile of roasting, they have the flexibility to adjust the drum speed, roasting time and roasting temperature. Checking the exhaust and chamber temperature is as easy as pressing a button to display temperature. The Rosetta Stone function provides the roaster some control and action before the roasting beans reach second crack.
           </p>
         </div>
-        <div className='lg:w-2/5 flex flex-col gap-1 lg:pl-3'>
+        <motion.div className='lg:w-2/5 flex flex-col gap-1 lg:pl-3'
+          variants={list}
+          initial='initial'
+          whileInView="animate"
+          viewport={{once:true}}
+        >
           <FeatureItem icon={<FaGlobeAsia className='text-dullgold w-5 h-5' />} text='Built for Asia Use' />
           <FeatureItem icon={<MdNoiseAware className='text-dullgold w-5 h-5' />} text='Low Noise Roasting' />
           <FeatureItem icon={<GiSmokeBomb className='text-dullgold w-5 h-5' />} text='Smoke suppression technology' />
           <FeatureItem icon={<MdOutlineMicrowave className='text-dullgold w-5 h-5' />} text='Space Saving: Microwave size' />
           <FeatureItem icon={<AiOutlineProfile className='text-dullgold w-5 h-5' />} text='Simple: Preset Profiles. Press, Start and Roast' />
-        </div>
+        </motion.div>
       </div>
       <div className=' flex flex-col lg:flex-row lg:gap-16 gap-6 '>
         <div>
