@@ -75,8 +75,8 @@ const Hero = () => {
           transition={{duration:1,delay:1}}
         >
           <div className='flex justify-end'>
-          <div class="absolute xl:top-[-28px] xl:right-[-4px] hover:scale-110 ease-in duration-150 lg:flex hidden ">
-            <button href="#features" onClick={smoothScroll} class="xl:w-16 xl:h-16 h-14 w-14 bg-dullgray rounded-full text-white font-semibold relative  xl:leading-4 xl:text-base text-sm">Learn More
+          <div className="absolute xl:top-[-28px] xl:right-[-4px] hover:scale-110 ease-in duration-150 lg:flex hidden ">
+            <button href="#features" onClick={smoothScroll} className="xl:w-16 xl:h-16 h-14 w-14 bg-dullgray rounded-full text-white font-semibold relative  xl:leading-4 xl:text-base text-sm">Learn More
               <FaRegHandPointer className='absolute xl:top-[52px] right-0 w-8 h-8' />
             </button>
           </div>
