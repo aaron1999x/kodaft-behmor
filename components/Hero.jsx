@@ -57,7 +57,7 @@ const Hero = () => {
               animate={{y:0, opacity:1}}
               transition={{duration:1, delay:0.3}}
             >
-              <a href="">Get it now</a>
+              <a href="https://wa.me/601113247234?text=I%20am%20interested%20in%20buying%20a%20Behmor2020SRPlus!" target='_blank'>Get it now</a>
             </motion.button>
             <motion.button className='flex flex-row items-center border border-dullgold rounded-lg text-dullgold p-2 hover:bg-dullgold hover:text-white'
               initial={{y:20, opacity:0}}
