@@ -5,7 +5,7 @@ import Script from "next/script";
 export default function Home() {
 
   React.useEffect(()=>{
-    window.location.href="/behmorcoffeeroaster"
+    window.location.href="/behmorcoffeeroastermalaysia"
   },[])
 
   return (
