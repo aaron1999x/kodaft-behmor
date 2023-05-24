@@ -9,7 +9,7 @@ import Script from 'next/script'
 const raleway = Raleway({ subsets: ['latin'] })
 const playfair =Playfair_Display({ subsets: ['latin'],variable:'--font-playfair' })
 
-const behmorcoffeeroaster = () => {
+const behmorcoffeeroastermalaysia = () => {
   return (
     
     <main
@@ -38,4 +38,4 @@ const behmorcoffeeroaster = () => {
   )
 }
 
-export default behmorcoffeeroaster
+export default behmorcoffeeroastermalaysia
