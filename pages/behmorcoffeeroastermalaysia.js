@@ -5,6 +5,7 @@ import Features from '@/components/Features'
 import WhatsappCTA from '@/components/WhatsappCTA'
 import MetaHead from '@/components/MetaHead'
 import Script from 'next/script'
+import FooterCredit from '@/components/FooterCredit'
 
 const raleway = Raleway({ subsets: ['latin'] })
 const playfair =Playfair_Display({ subsets: ['latin'],variable:'--font-playfair' })
@@ -33,6 +34,7 @@ const behmorcoffeeroastermalaysia = () => {
       <Hero />
       <Features />
       <WhatsappCTA />
+      <FooterCredit />
     </main>
     
   )
