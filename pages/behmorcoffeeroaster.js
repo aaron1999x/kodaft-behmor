@@ -3,12 +3,12 @@ import { Player } from '@lottiefiles/react-lottie-player';
 import Script from "next/script";
 
 
-const behmorcoffeeroaster = () => {
+const Behmorcoffeeroaster = () => {
 
   React.useEffect(()=>{
     window.location.href="/behmorcoffeeroastermalaysia"
   },[])
-  
+
   return (
     <>
     <Script
@@ -36,4 +36,4 @@ const behmorcoffeeroaster = () => {
   )
 }
 
-export default behmorcoffeeroaster
+export default Behmorcoffeeroaster
