@@ -5,6 +5,8 @@ import behmorMachine from '../public/images/behmor-machine.png'
 import {AiOutlineFilePdf} from 'react-icons/ai'
 import {FaRegHandPointer} from 'react-icons/fa'
 import {motion} from 'framer-motion'
+import EmailSidebarMobile from './EmailSidebarMobile'
+
 
 const Hero = () => {
 
@@ -83,8 +85,10 @@ const Hero = () => {
           </div>
           <Image src={behmorMachine} alt='Behmor 2020SR Plus'/>
         </motion.div>
-      </div>
 
+        <EmailSidebarMobile />
+      </div>
+    
     </section>
   )
 }
