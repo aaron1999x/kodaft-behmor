@@ -1,6 +1,7 @@
 import React from "react"
 import { Player } from '@lottiefiles/react-lottie-player';
 import Script from "next/script";
+import MetaHead from "@/components/MetaHead";
 
 export default function Home() {
 
@@ -23,6 +24,7 @@ export default function Home() {
           gtag('config', 'G-GQSDTSM775');
         `}
       </Script>
+      <MetaHead />
       <div className="h-screen flex items-center justify-center">
         <Player 
           src='https://assets10.lottiefiles.com/packages/lf20_4mu3hoco.json'
