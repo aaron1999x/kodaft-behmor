@@ -2,6 +2,7 @@ import React from "react"
 import { Player } from '@lottiefiles/react-lottie-player';
 import Script from "next/script";
 import MetaHead from "@/components/MetaHead";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -25,6 +26,9 @@ export default function Home() {
         `}
       </Script>
       <MetaHead />
+      <Link href="/behmorcoffeeroastermalaysia">
+        Go to Behmor Coffee Roaster Malaysia
+      </Link>
       <div className="h-screen flex items-center justify-center">
         <Player 
           src='https://assets10.lottiefiles.com/packages/lf20_4mu3hoco.json'
